@@ -1,0 +1,64 @@
+#title {
+  font-size: 60px;
+  text-align: center;
+}
+
+#applicationForm,
+#qrscaner {
+  margin: 30px;
+}
+
+#applicationFormContent {
+  margin: 30px;
+  border: 1px solid black;
+  font-size: 30px;
+}
+
+#applicationFormTable {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+#canvasHome {
+  display: flex;
+  justify-content: center;
+}
+#canvas {
+  transform: rotateY(180deg);
+  width: 100%;
+}
+
+input {
+  width: 70%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+#output {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+button,
+input {
+  font-size: 30px;
+}

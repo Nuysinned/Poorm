@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>푸름 | 청운급식네트워크</title>
+    <script src="./libraryfiles/jsQR.js"></script>
+    <script src="./libraryfiles/FileSaver.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 id="title">푸름 | 청운급식네트워크</h1>
+
+    <div id="applicationForm">
+      <button id="applicationFormButton">▼ 신청자 표 열기</button>
+      <div id="applicationFormContent" class="hide">
+        <div>
+          <div>
+            <b>csv 파일로 명단 받기:</b> <input type="file" id="getcsv" />
+          </div>
+          <div class="red">
+            csv 파일의 1행 1열은 grade, 1행 2열은 class, 1행 3열은 number, 1행
+            4열은 name이어야한다.<br />학년, 반, 번호는 모두 숫자로만
+            이루어져야한다.<br />1행 1열부터 차례대로 채워야 한다.
+          </div>
+          <img src="example.png" alt="example" width="200" />
+        </div>
+        <button id="release">csv로 오늘의 결과 내보내기</button>
+        <button id="removeall" class="red">내용 다 지우기</button>
+        <table id="applicationFormTable">
+          <tr>
+            <th>#</th>
+            <th>학년</th>
+            <th>반</th>
+            <th>번호</th>
+            <th>성함</th>
+            <th>비고</th>
+          </tr>
+          <tr>
+            <td>입력창</td>
+            <td><input id="grade" type="number" /></td>
+            <td><input id="class" type="number" /></td>
+            <td><input id="number" type="number" /></td>
+            <td><input id="name" type="text" /></td>
+            <td><button id="submit">입력</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="qrscaner">
+      <div id="canvasHome">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div id="output"></div>
+    </div>
+    <script src="./scriptfiles/hash.js"></script>
+    <script src="./scriptfiles/applicationForm.js"></script>
+    <script src="./scriptfiles/qrscaner.js"></script>
+  </body>
+</html>
